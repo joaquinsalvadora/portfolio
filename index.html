@@ -1,12 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-    <h1>Hello! :)</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="Assets/Images/pavicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!--heading-->
+
+    <h1>Hello! 1</h1>
+    <h1>Hello! 2</h1>
+    <h1>Hello! 3</h1>
+    <h1>Hello! 4</h1>
+    <h1>Hello! 5</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong>
+        Ipsa omnis quia facilis velit</strong
+      >,<em>
+        voluptatibus blanditiis totam sed doloremque animi iure ipsam officiis
+        quibusdam</em
+      >, <mark> delectus</mark>, <s> mollitia laborum</s> et sapiente ipsum
+      fugit! Repellat fuga ut eligendi dolore, assumenda dolorum aliquid culpa
+      cum illum reprehenderit vitae quod,
+      <span style="color: red">
+        voluptate cupiditate? Minus nemo nesciunt dicta!</span
+      >
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing <sub>elit</sub>.
+      Facilis natus voluptate eius sed architecto voluptas? Aliquid nam libero
+      fuga impedit non rem illum corporis eaque ipsam ullam nobis eum
+      necessitatibus beatae vitae, ipsum <sup> sequi!</sup> Veritatis ducimus
+      commodi omnis, sunt culpa incidunt illum quis? Iure numquam, voluptates
+      obcaecati quisquam quas sint! Veritatis commodi, vel magni adipisci iste
+      dolorum saepe enim excepturi eveniet eos suscipit autem eaque voluptate,
+      culpa incidunt esse voluptatibus deserunt quaerat? Obcaecati ducimus
+      soluta cum. Officiis, iusto praesentium! Quidem architecto cum, non eaque
+      repudiandae modi voluptatem quam et fuga pariatur animi quae
+      necessitatibus. Fugit accusamus necessitatibus
+      <a href="index.html"> nemo qui atque.</a>
+    </p>
+
+    <!--list-->
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+      <li>List 4</li>
+      <li>List 5</li>
+    </ul>
+
+    <ol>
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+      <li>List 4</li>
+      <li>List 5</li>
+    </ol>
+
+    <!--Table-->
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>joaquin</td>
+          <td>joaquin@gmail.com</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>talde</td>
+          <td>talde@gmail.com</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>salvadora</td>
+          <td>salvadora@gmail.com</td>
+          <td>24</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+    <!--Form-->
+    <form
+      action="process.php"
+      method="POST"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <div>
+        <label>First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Input your firstname here!"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label>Last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Input your lastname here!"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label>Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Input your email here!"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label>Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Input your password here!"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label>Date</label>
+        <input type="date" name="date" id="date" required />
+      </div>
+      <br />
+      <div>
+        <label>Gender</label>
+        <select name="gender" id="gender" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label>Color Picker</label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <br />
+      <div>
+        <label>Message</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          placeholder="Put your comments here!"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label>File Upload</label>
+        <input type="file" name="file" id="file" accept="image/*" multiple />
+      </div>
+      <br />
+      <input type="submit" name="submit" value="Submit Form" />
+      <button type="button">Click</button>
+    </form>
+
+    <!--Image-->
+    <br />
+    <a href="Assets/Images/pavicon.png">
+      <img src="Assets/Images/pavicon.png" alt="default image" width="200" />
+    </a>
+
+    <!--Quoatation-->
+    <blockquote cite="https://www.wikipedia.org/">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat
+      tempora quidem. Dignissimos saepe ut cupiditate nisi, necessitatibus
+      nesciunt cumque quibusdam itaque inventore perspiciatis incidunt ducimus
+      ab quasi accusamus repellendus. Explicabo suscipit ut ad voluptates
+      eligendi totam, aliquid doloribus architecto, repellendus praesentium
+      dolores optio minus vero maxime eaque in voluptate corrupti facilis! Error
+      sequi placeat unde consectetur suscipit iusto, tempore, architecto debitis
+      ut fugiat ipsum aut. Iure, doloremque a. Distinctio, iure alias? Ab
+      laudantium porro animi distinctio? Et, asperiores fugiat.
+    </blockquote>
+
+    <!--Abbreviation-->
+        <br>
+        <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+        <p><cite>HTML Lesson</cite> by PinoyFreeCoder</p>
+
+
+    <div style="margin-top: 500px"></div>
+  </body>
 </html>
